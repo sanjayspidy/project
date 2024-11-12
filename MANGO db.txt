@@ -1,0 +1,81 @@
+MANGO db
+
+
+
+
+
+=====================operators=====================
+1) quary and projection operator
+2) update operator
+3) aggrecation operartor
+
+
+1)>> projection :-refers to picking only the data that is required rather than the entire
+document's data.
+
+ comparison:-
+->$eq(equal)
+->$ne(not equal)
+->$gt(greater than)
+->$gte(greater than equal)
+->$lt(less than)
+->$lte(less than or equal)
+->$in/nin(exist or not exist)
+
+logical.
+
+->$and: and operation
+->$or: or operation
+->$not: not operation
+->
+array
+->$all(returns documents from collection if it matches all values in speacified array
+->$size(returns documents from collection to match an array with the provided number of elementsbin it)
+->$eleMatch(retuens those documents  that match specified condition within each array element)
+
+
+element
+->$exists( give the data if it exists)
+->$type( give ifv the typed  data matches)
+>bitwise
+>evaluation
+>geospatial
+
+
+2)>>update operator:- use to update the valvues of the fields of documents matching the specified condition
+
+->$currentDate
+->$min
+->$inc
+->$max
+->mul
+->
+
+3)>> aggregation operator:-As a result of processing the data records and documents,aggregation operations provide computed results.
+
+
+>>>>>>>>>>>>> what are the regular expression in mongodb:
+
+
+ * they are usexd to match patterns in a document
+*   provide patterns or a sequence of characters for matching text and define search patterns
+* retriving an unidentified field in a document easily
+* quary databases to find a smaller subset of data within a collection
+
+
+
+============================$Regex operator ==================================
+*$Regex operator provides regular expression capavilities for pattern matching strings in the quaries
+
+>>> syntax
+
+db.collection_name.find{<field>:{
+$regex:/pattern/}}
+
+{<field>:{$regex:"Ypattern$",}}
+{<field>:{$regex:/pattern/,$options:"s/x/I/m'}}}}
+
+
+
+
+ 
